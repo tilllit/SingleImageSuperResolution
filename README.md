@@ -1,3 +1,5 @@
 # SingleImageSuperResolution
 
-![Alt Text](https://github.com/tilllit/SingleImageSuperResolution/blob/main/GAN_div2k.gif)
+<p align="center">
+  <img height="640" width="960" src="GAN_div2k.gif">
+</p>
