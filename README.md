@@ -1,7 +1,7 @@
 # SingleImageSuperResolution
 <br />
 
-This project will investigate on quality disparitys between different approaches to image Super-Resolution by using different metrics. <br />
+This project will investigate on quality disparitys between different approaches to image super-resolution by using different metrics. <br />
 Super-Resolution is the process of increasing the resolution of an image and therefore the contained information. <br />
 
 The following approaches will be discussed:
@@ -39,7 +39,7 @@ The following metrics ase used to determine the quality of the different SR- (Su
   
   - The **LOWER** the MSE, the better the image. <br /><br />
   
-- **Laplace-Algorithm** for Sharpness / blurriness
+- **Laplace-Algorithm** for Sharpness / blurriness <br />
   The laplacian algorithm can be used as a metric for blurrinness in an image, with higher values beeing less blurry. <br />
   
   - The **HIGHER** the Sharpness, the better the image.
@@ -130,17 +130,28 @@ As the figure points out, the network produces a better PSNR and SSIM score. The
 <br />
 
 ### Implementation:
-The SRCNN used in this project can be found in the folder [CNN](test) <br />
+The SRCNN used in this project can be found in the folder [CNN](https://github.com/tilllit/SingleImageSuperResolution/tree/main/CNN) <br />
 It is a modification of this implementation: [link](https://medium.com/gdplabs/image-super-resolution-in-python-cae6050b13d8) <br />
 
 For training the user needs to manually add the div2k database.
-For testing an pre trained model is obtained and the settings should allow a run of the script without any problem.
+For testing, a pre-trained model is obtained and the settings should allow to run the script TF.py without any problem.
 
 <br />
 <br />
 
 
 ## SRGAN
+
+The architectur of the SRGAN (Super Resolution Generative Adversarial Networks) follows the description of the following papers: <br />
+
+- [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802)
+- [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks](https://arxiv.org/abs/1809.00219)
+<br />
+
+<p align="center">
+  <img height="640" width="960" src="figures/srgan_architecture.png">
+</p>
+
 <p align="center">
   <img height="640" width="960" src="figures/GAN_div2k.gif">
 </p>
