@@ -16,10 +16,13 @@ The following approaches will be discussed:
 
 The following metrics ase used to determine the quality of the different SR- (Super Resolution) techniques:
 - **PSNR** (Peak Signal Noide Ratio) <br />
-  PSNR is a long established image quality metric, most commonly used to compare the compression of different codecs, such as image compression.
+  PSNR is a long established image quality metric, most commonly used to compare the compression of different codecs, such as image compression. <br />
+
   <p align="center">
-  <img src="figures/Interpolation_visual.png">
+  <img height="140" width="240" src="figures/psnr.png">
   </p>
+  
+  The **HIGHER** the PSNR, the better the image. <br /><br />
 - **SSIM** (Structural Similarity Index Measure)
 - **MSE** (Mean Squared Error)
 - **Laplace-Algorithm** for blurriness / clarity
