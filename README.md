@@ -105,6 +105,14 @@ Sub-Pixel Convolutional Neural Network](https://arxiv.org/abs/1609.05158)
 - [Image Super-Resolution Using Deep
 Convolutional Networks](https://arxiv.org/abs/1501.00092)
 
+<br />
+
+<p align="center">
+  <img height="200" width="800" src="figures/srcnn_architecture.png">
+</p>
+
+The training of a SRCNN that produces higher quality output images can take more than 10^8 epochs and is therefore very time intensive.
+
 
 ## SRGAN
 <p align="center">
