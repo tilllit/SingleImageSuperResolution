@@ -162,8 +162,9 @@ The training of the SRGAN can be witnessed in the following GIF file:
   <img height="640" width="960" src="figures/GAN_div2k.gif">
 </p>
 
+When having a look at the output picture of the GAN it becomes obvious, that the GAN is superior to the interpolation technique. It is actualy very close to the original, even though the generative aspects are visible. PSNR and sharpness are better than the interpolation. SSIM and MSE are worse, because the generator creates new parts in the image, which share no similaritys with the original.
 <p align="center">
-  <img height="350" width="500" src="figures/lanczos_vs_gan.png ">
+  <img height="350" width="800" src="figures/lanczos_vs_gan.png ">
 </p>
 
 
@@ -171,4 +172,6 @@ The training of the SRGAN can be witnessed in the following GIF file:
 The GAN was also trained on the div2k dataset and is based on the following implementation: [link](https://github.com/AarohiSingla/SRGAN_CustomDataset) <br />
 
 
-* end
+## Evaluation
+
+test
