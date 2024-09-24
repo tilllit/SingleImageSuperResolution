@@ -53,7 +53,7 @@ The following metrics ase used to determine the quality of the different SR- (Su
 - **Laplace-Algorithm** for blurriness / clarity
 <br />
 
-A visual comparison between the interpolation algorithms as seen in the picture can be dublicated by the use with the  using the "Interpolation.py" script in the folder [Interpolation](test)
+A visual comparison between the interpolation algorithms as seen in the picture can be dublicated by the use with the  using the "Interpolation.py" script in the folder [Interpolation](https://github.com/tilllit/SingleImageSuperResolution/tree/main/Interpolation)
 <br />
 <br />
 
