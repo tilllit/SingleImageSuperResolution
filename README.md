@@ -111,7 +111,20 @@ Convolutional Networks](https://arxiv.org/abs/1501.00092)
   <img height="200" width="800" src="figures/srcnn_architecture.png">
 </p>
 
-The training of a SRCNN that produces higher quality output images can take more than 10^8 epochs and is therefore very time intensive.
+The training of a SRCNN that produces higher quality output images can take more than 10^8 epochs and is therefore very time intensive as mentioned in the above papers. <br />
+
+The results of a medium-range performing network is shown in the following picture (4k epochs):
+
+<p align="center">
+  <img height="350" width="500" src="figures/lanczos_vs_cnn.png ">
+</p>
+
+<br />
+As the figure points out, the network produces a better PSNR and SSIM score. The MSE is worse in this case, probably because of the higher generative stake. The laplace algorithm rates the network to be more blurry, what is expected to decrease with more epochs of training. See following picture [Source](https://github.com/YeongHyeon/Super-Resolution_CNN):
+
+<p align="center">
+  <img height="640" width="960" src="figures/GAN_div2k.gif">
+</p>
 
 
 ## SRGAN
