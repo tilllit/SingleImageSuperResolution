@@ -45,18 +45,18 @@ def main():
     
     ssim_val, psnr_val, mse_val,laplacian = calculate_metrics(linear, input)
     axs[1].imshow(linear)
-    axs[1].set_title(r"$\bf Linear $" +f'\nPSNR: {psnr_val:.2f}, \nSSIM: {ssim_val:.3f}, \nMSE: {mse_val:.2f}, \nClarity: {laplacian:.1f}')
+    axs[1].set_title(r"$\bf Linear $" +f'\nPSNR: {psnr_val:.2f}, \nSSIM: {ssim_val:.3f}, \nMSE: {mse_val:.2f}, \nSharpness: {laplacian:.1f}')
     ssim_val, psnr_val, mse_val, laplacian = calculate_metrics(nearest, input)
     axs[2].imshow(nearest)
-    axs[2].set_title(r"$\bf Nearest $" + f'\nPSNR: {psnr_val:.2f}, \nSSIM: {ssim_val:.3f}, \nMSE: {mse_val:.2f}, \nClarity: {laplacian:.1f}')
+    axs[2].set_title(r"$\bf Nearest $" + f'\nPSNR: {psnr_val:.2f}, \nSSIM: {ssim_val:.3f}, \nMSE: {mse_val:.2f}, \nSharpness: {laplacian:.1f}')
 
     ssim_val, psnr_val, mse_val, laplacian = calculate_metrics(bicubic, input)
     axs[3].imshow(bicubic)
-    axs[3].set_title(r"$\bf Bicubic $" + f'\nPSNR: {psnr_val:.2f}, \nSSIM: {ssim_val:.3f}, \nMSE: {mse_val:.2f}, \nClarity: {laplacian:.1f}')
+    axs[3].set_title(r"$\bf Bicubic $" + f'\nPSNR: {psnr_val:.2f}, \nSSIM: {ssim_val:.3f}, \nMSE: {mse_val:.2f}, \nSharpness: {laplacian:.1f}')
     
     ssim_val, psnr_val, mse_val, laplacian = calculate_metrics(lanczos, input)
     axs[4].imshow(lanczos)
-    axs[4].set_title(r"$\bf Lanczos $" + f'\nPSNR: {psnr_val:.2f}, \nSSIM: {ssim_val:.3f}, \nMSE: {mse_val:.2f}, \nClarity: {laplacian:.1f}')
+    axs[4].set_title(r"$\bf Lanczos $" + f'\nPSNR: {psnr_val:.2f}, \nSSIM: {ssim_val:.3f}, \nMSE: {mse_val:.2f}, \nSharpness: {laplacian:.1f}')
     
     plt.tight_layout()
     plt.show()
