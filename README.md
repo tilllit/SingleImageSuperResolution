@@ -18,17 +18,34 @@ The following metrics ase used to determine the quality of the different SR- (Su
 - **PSNR** (Peak Signal Noide Ratio) <br />
   PSNR is a long established image quality metric, most commonly used to compare the compression of different codecs, such as image compression. <br />
 
-  <p align="center">
-  <img height="140" width="240" src="figures/psnr.png">
+  <p align="left">
+  <img height="140" width="250" src="figures/psnr.png">
   </p>
   
   The **HIGHER** the PSNR, the better the image. <br /><br />
-- **SSIM** (Structural Similarity Index Measure)
-- **MSE** (Mean Squared Error)
-- **Laplace-Algorithm** for blurriness / clarity
+  
+- **SSIM** (Structural Similarity Index Measure) <br />
+  The SSIM compares the luminance, contrast and structure of the original and degraded image. It measures the structural elements of the pixels.
+  The SSIM is calculated between 0 and 1, while 1 beeing the best possible value.
+  
+  <p align="left">
+  <img height="140" width="250" src="figures/ssim.png">
+  </p>
+
+  The **HIGHER** the SSIM, the better the image. <br /><br />
+  
+- **MSE** (Mean Squared Error) <br />
+  The MSE as the name suggests is an error (between estimation and target) and is therefor to be minimized. The MSE is widely known accross the machine learning scene. <br /><br />
+  The **LOWER** the MSE, the better the image. <br /><br />
+  
+- **Laplace-Algorithm** for Sharpness / blurriness
+  The laplacian algorithm can be used as a metric for blurrinness in an image, with higher values beeing less blurry.
+  The **HIGHER** the Sharpness, the better the image.
 <br />
 
-A visual comparison between the interpolation algorithms as seen in the picture can be dublicated by the use with the  using the "Interpolation.py" script in the folder [Interpolation](https://github.com/tilllit/SingleImageSuperResolution/tree/main/Interpolation)
+[Source: PSNR, SSIM](https://www.testdevlab.com/blog/full-reference-quality-metrics-vmaf-psnr-and-ssim)
+ / 
+[Source: Laplace](https://medium.com/@sagardhungel/laplacian-and-its-use-in-blur-detection-fbac689f0f88)
 <br />
 <br />
 
@@ -43,24 +60,25 @@ Standard methods for interpolation are algorithms like: <br />
 - **Lanczos** interpolation
 <br />
 
-The following picture show a visual representaion of the operational principle of the specific algorithms:
-[ -Source](https://matplotlib.org/1.4.2/examples/images_contours_and_fields/interpolation_methods.html)
+The following picture show a visual representaion of the operational principle of the specific algorithms: 
+[Source](https://matplotlib.org/1.4.2/examples/images_contours_and_fields/interpolation_methods.html)
 
 <p align="left">
   <img src="figures/Interpolation_visual.png">
 </p>
 <br />
 
-By applying the discussed metrics onto an test image upscaled by the mentioned interpolation methods there is the following result:
+### Application:
 
 <p align="left">
   <img src="figures/Interpolation.png">
 </p>
 
-The metrics imply a close race between bicubic and lanczos algorithm. <br />
-The descision is made in favour of the **LANCZOS**, because here the strengths are more about visual quality than simmilarity to the original image.
+The metrics imply a close race between bicubic and lanczos algorithm. The descision is made in favour of the **LANCZOS**, because here the strengths are more about visual quality than simmilarity to the original image.
 
-So in all following comparisons the **LANCZOS** interpolation algorithm is representative of the interpolation technique.
+So in all following comparisons the **LANCZOS** interpolation algorithm is representative of the interpolation technique. <br />
+
+A visual comparison between the interpolation algorithms as seen in the picture can be dublicated by the user running the "Interpolation.py" script in the folder [Interpolation](https://github.com/tilllit/SingleImageSuperResolution/tree/main/Interpolation)
 <br />
 <br />
 
