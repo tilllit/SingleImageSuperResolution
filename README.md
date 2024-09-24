@@ -10,9 +10,30 @@ Therefore it should work best on a wide spectrum of applications.
 
 The dataset can be downloaded from this link: <br />
 [Kaggle](https://www.kaggle.com/datasets/rain0905/div2k-dataset)
+<br />
+<br />
 
+## Interpolation
 
+The first technique for image Super-Resolution is interpolation. <br />
+Standard methods for interpolation are algorithms like: <br />
+- **Bi-Linear** interpolation
+- **Nearest neighbot** interpolation
+- **Bi-Cubic** interpolation
+- **Lanczos** interpolation
+<br />
 
+The following picture show a visual representaion of the operational principle of the specific algorithms:
+
+<p align="center">
+  <img src="figures/Interpolation_visual">
+</p>
+
+<p align="center">
+  <img src="figures/Interpolation.png">
+</p>
+
+## Metrics (image quality)
 
 ## GAN
 <p align="center">
