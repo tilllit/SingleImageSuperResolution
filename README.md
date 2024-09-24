@@ -99,6 +99,8 @@ The dataset can be downloaded from this link: [Kaggle](https://www.kaggle.com/da
 
 ## SRCNN
 
+### Architectur
+
 The architectur of the SRCNN (Super Resolution Convolutional Neural Network) follows the description of the following papers:
 - [Real-Time Single Image and Video Super-Resolution Using an Efficient
 Sub-Pixel Convolutional Neural Network](https://arxiv.org/abs/1609.05158)
@@ -142,6 +144,8 @@ For testing, a pre-trained model is obtained and the settings should allow to ru
 
 ## SRGAN
 
+### Architectur
+
 The architectur of the SRGAN (Super Resolution Generative Adversarial Networks) follows the description of the following papers: <br />
 
 - [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802)
@@ -149,13 +153,22 @@ The architectur of the SRGAN (Super Resolution Generative Adversarial Networks) 
 <br />
 
 <p align="center">
-  <img height="640" width="960" src="figures/srgan_architecture.png">
+  <img height="450" width="800" src="figures/srgan_architecture.png">
 </p>
+
+The training of the SRGAN can be witnessed in the following GIF file:
 
 <p align="center">
   <img height="640" width="960" src="figures/GAN_div2k.gif">
 </p>
 
-###
+<p align="center">
+  <img height="350" width="500" src="figures/lanczos_vs_gan.png ">
+</p>
+
+
+### Implementation
+The GAN was also trained on the div2k dataset and is based on the following implementation: [link](https://github.com/AarohiSingla/SRGAN_CustomDataset) <br />
+
 
 * end
