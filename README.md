@@ -22,7 +22,7 @@ The following metrics ase used to determine the quality of the different SR- (Su
   <img height="140" width="250" src="figures/psnr.png">
   </p>
   
-  The **HIGHER** the PSNR, the better the image. <br /><br />
+  - The **HIGHER** the PSNR, the better the image. <br /><br />
   
 - **SSIM** (Structural Similarity Index Measure) <br />
   The SSIM compares the luminance, contrast and structure of the original and degraded image. It measures the structural elements of the pixels.
@@ -32,15 +32,17 @@ The following metrics ase used to determine the quality of the different SR- (Su
   <img height="140" width="250" src="figures/ssim.png">
   </p>
 
-  The **HIGHER** the SSIM, the better the image. <br /><br />
+  - The **HIGHER** the SSIM, the better the image. <br /><br />
   
 - **MSE** (Mean Squared Error) <br />
   The MSE as the name suggests is an error (between estimation and target) and is therefor to be minimized. The MSE is widely known accross the machine learning scene. <br /><br />
-  The **LOWER** the MSE, the better the image. <br /><br />
+  
+  - The **LOWER** the MSE, the better the image. <br /><br />
   
 - **Laplace-Algorithm** for Sharpness / blurriness
-  The laplacian algorithm can be used as a metric for blurrinness in an image, with higher values beeing less blurry.
-  The **HIGHER** the Sharpness, the better the image.
+  The laplacian algorithm can be used as a metric for blurrinness in an image, with higher values beeing less blurry. <br />
+  
+  - The **HIGHER** the Sharpness, the better the image.
 <br />
 
 [Source: PSNR, SSIM](https://www.testdevlab.com/blog/full-reference-quality-metrics-vmaf-psnr-and-ssim)
@@ -90,14 +92,21 @@ Therefore it should work best on a wide spectrum of applications.
 
 "The DIV2K dataset is one of the most popular datasets used for image super-resolution, which is collected for NTIRE2017 and NTIRE2018 Super-Resolution Challenges. The dataset is composed of 800 images for training, 100 images for validation, and 100 images for testing. Each image has a 2K resolution." - [Medium](https://openmmlab.medium.com/awesome-datasets-for-super-resolution-introduction-and-pre-processing-55f8501f8b18)
 
-
-The dataset can be downloaded from this link: <br />
-[Kaggle](https://www.kaggle.com/datasets/rain0905/div2k-dataset)
+### Download:
+The dataset can be downloaded from this link: [Kaggle](https://www.kaggle.com/datasets/rain0905/div2k-dataset)
 <br />
 <br />
 
+## SRCNN
 
-## GAN
+The architectur of the SRCNN (Super Resolution Convolutional Neural Network) follows the description of the following papers:
+- [Real-Time Single Image and Video Super-Resolution Using an Efficient
+Sub-Pixel Convolutional Neural Network](https://arxiv.org/abs/1609.05158)
+- [Image Super-Resolution Using Deep
+Convolutional Networks](https://arxiv.org/abs/1501.00092)
+
+
+## SRGAN
 <p align="center">
   <img height="640" width="960" src="figures/GAN_div2k.gif">
 </p>
