@@ -26,7 +26,7 @@ Standard methods for interpolation are algorithms like: <br />
 The following picture show a visual representaion of the operational principle of the specific algorithms:
 
 <p align="center">
-  <img src="figures/Interpolation_visual">
+  <img height="130" width="490" src="figures/Interpolation_visual">
 </p>
 
 <p align="center">
