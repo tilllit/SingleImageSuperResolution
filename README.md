@@ -120,11 +120,24 @@ The results of a medium-range performing network is shown in the following pictu
 </p>
 
 <br />
-As the figure points out, the network produces a better PSNR and SSIM score. The MSE is worse in this case, probably because of the higher generative stake. The laplace algorithm rates the network to be more blurry, what is expected to decrease with more epochs of training. See following picture [Source](https://github.com/YeongHyeon/Super-Resolution_CNN):
+As the figure points out, the network produces a better PSNR and SSIM score. The MSE is worse in this case, probably because of the higher generative stake. The laplace algorithm rates the network to be more blurry, what is expected to decrease with more epochs of training. See following picture: <br /> <br /> 
 
 <p align="center">
-  <img height="640" width="960" src="figures/GAN_div2k.gif">
+  <img height="200" width="800" src="figures/cnn_training.png">
 </p>
+
+[Source](https://github.com/YeongHyeon/Super-Resolution_CNN)
+<br />
+
+### Implementation:
+The SRCNN used in this project can be found in the folder [CNN](test) <br />
+It is a modification of this implementation: [link](https://medium.com/gdplabs/image-super-resolution-in-python-cae6050b13d8) <br />
+
+For training the user needs to manually add the div2k database.
+For testing an pre trained model is obtained and the settings should allow a run of the script without any problem.
+
+<br />
+<br />
 
 
 ## SRGAN
