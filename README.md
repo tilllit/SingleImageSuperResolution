@@ -12,6 +12,24 @@ The following approaches will be discussed:
 <br />
 
 
+## Metrics (image quality)
+
+The following metrics ase used to determine the quality of the different SR- (Super Resolution) techniques:
+- **PSNR** (Peak Signal Noide Ratio) <br />
+  PSNR is a long established image quality metric, most commonly used to compare the compression of different codecs, such as image compression.
+  <p align="center">
+  <img src="figures/Interpolation_visual.png">
+  </p>
+- **SSIM** (Structural Similarity Index Measure)
+- **MSE** (Mean Squared Error)
+- **Laplace-Algorithm** for blurriness / clarity
+<br />
+
+A visual comparison between the interpolation algorithms as seen in the picture can be dublicated by the use with the  using the "Interpolation.py" script in the folder [Interpolation](https://github.com/tilllit/SingleImageSuperResolution/tree/main/Interpolation)
+<br />
+<br />
+
+
 ## Interpolation
 
 The first technique for image Super-Resolution is interpolation. <br />
@@ -40,20 +58,6 @@ The metrics imply a close race between bicubic and lanczos algorithm. <br />
 The descision is made in favour of the **LANCZOS**, because here the strengths are more about visual quality than simmilarity to the original image.
 
 So in all following comparisons the **LANCZOS** interpolation algorithm is representative of the interpolation technique.
-<br />
-<br />
-
-
-## Metrics (image quality)
-
-The following metrics ase used to determine the quality of the different SR- (Super Resolution) techniques:
-- **PSNR** (Peak Signal Noide Ratio)
-- **SSIM** ()
-- **MSE**
-- **Laplace-Algorithm** for blurriness / clarity
-<br />
-
-A visual comparison between the interpolation algorithms as seen in the picture can be dublicated by the use with the  using the "Interpolation.py" script in the folder [Interpolation](test)
 <br />
 <br />
 
