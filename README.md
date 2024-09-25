@@ -182,7 +182,31 @@ The SRGAN used in this project can be found in the folder [SRGAN](https://github
 For training the user needs to manually add the div2k database.
 For testing, a pre-trained model is obtained and the settings should allow to run the script main.py without any problem.
 
+<br />
+<br />
+
 
 ## Evaluation
 
-test
+- To evaluate the project, one can say, that the interpolation method often produces a better score at the metrics, that compare the output picture to the original (especially the MSE). <br />
+- The SRCNN often produces outputs, that are visually more appealing, but for adding learned content, that is not based on the original, the metrics are sometimes worse than the interpolation. It is expected, that the quality of the SRCNN will more often
+  surpass the interpolation, the more epochs are used for its training. Since time for this project was limited, this will not be investigated any further. <br />
+- The GAN obviously produces outputs, that are most appealing to the pure eye. Since it generates missing content, it differs more from the original, than one can see. This is filteres by the conventional metrics, comparing the output to the original.
+  The sharpness metric, using the laplace-arlgorithm uses a non-comparing principal. It shows in every picture, that the SRGAN produces the sharpest pictures of the three methodes. <br />
+
+The following examples will visualize this behavior. I find it interesting to see, how the SRGAN interprets the textures of the elements in the picture sometimes. <br />
+
+### Examples:
+
+<br />
+
+<br />
+
+## DIY
+
+For everyone, who wants to try these networks, there is a pretrained version, that creates a comparison, as seen in the pictures before in the folder [Comparison](https://github.com/tilllit/SingleImageSuperResolution/tree/main/Comparison). <br /><br />
+You can place any .png image by the name "org.png" in the folder "_test" and start ste script Compare.py. The code will create the comparing plot and save the output images in the subfolder "pred".
+
+
+
+
