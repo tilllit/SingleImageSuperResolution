@@ -229,6 +229,18 @@ The following examples will visualize this behavior. I find it interesting to se
   <img src="figures/results/7.png ">
 </p>
 
+<p align="center">
+  <img src="figures/results/8.png ">
+</p>
+
+<p align="center">
+  <img src="figures/results/9.png ">
+</p>
+
+<p align="center">
+  <img src="figures/results/10.png ">
+</p>
+
 <br />
 
 ## DIY
