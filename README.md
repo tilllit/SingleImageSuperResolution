@@ -11,6 +11,13 @@ The following approaches will be discussed:
 <br />
 <br />
 
+  <p align="center">
+  <img src="figures/conclusion.png">
+  </p>
+
+<br />
+<br />
+
 
 ## Metrics (image quality)
 
@@ -170,6 +177,10 @@ When having a look at the output picture of the GAN it becomes obvious, that the
 
 ### Implementation
 The GAN was also trained on the div2k dataset and is based on the following implementation: [link](https://github.com/AarohiSingla/SRGAN_CustomDataset) <br />
+The SRGAN used in this project can be found in the folder [SRGAN](https://github.com/tilllit/SingleImageSuperResolution/tree/main/SRGAN) <br />
+
+For training the user needs to manually add the div2k database.
+For testing, a pre-trained model is obtained and the settings should allow to run the script main.py without any problem.
 
 
 ## Evaluation
