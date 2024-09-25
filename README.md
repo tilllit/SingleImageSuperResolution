@@ -170,6 +170,7 @@ The training of the SRGAN can be witnessed in the following GIF file:
 </p>
 
 When having a look at the output picture of the GAN it becomes obvious, that the GAN is superior to the interpolation technique. It is actualy very close to the original, even though the generative aspects are visible. PSNR and sharpness are better than the interpolation. SSIM and MSE are worse, because the generator creates new parts in the image, which share no similaritys with the original.
+
 <p align="center">
   <img height="350" width="800" src="figures/lanczos_vs_gan.png ">
 </p>
@@ -199,6 +200,34 @@ The following examples will visualize this behavior. I find it interesting to se
 ### Examples:
 
 <br />
+
+<p align="center">
+  <img src="figures/results/1.png ">
+</p>
+
+<p align="center">
+  <img src="figures/results/2.png ">
+</p>
+
+<p align="center">
+  <img src="figures/results/3.png ">
+</p>
+
+<p align="center">
+  <img src="figures/results/4.png ">
+</p>
+
+<p align="center">
+  <img src="figures/results/5.png ">
+</p>
+
+<p align="center">
+  <img src="figures/results/6.png ">
+</p>
+
+<p align="center">
+  <img src="figures/results/7.png ">
+</p>
 
 <br />
 
