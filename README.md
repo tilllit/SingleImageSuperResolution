@@ -22,7 +22,7 @@ The following approaches will be discussed:
 ## Metrics
 
 The following metrics ase used to determine the quality of the different SR- (Super Resolution) techniques:
-- **PSNR** (Peak Signal Noide Ratio) <br />
+- **PSNR** (Peak Signal Noise Ratio) <br />
   PSNR is a long established image quality metric, most commonly used to compare the compression of different codecs, such as image compression. <br />
 
   <p align="left">
@@ -47,7 +47,7 @@ The following metrics ase used to determine the quality of the different SR- (Su
   - The **LOWER** the MSE, the better the image. <br /><br />
   
 - **Laplace-Algorithm** for Sharpness / blurriness <br />
-  The laplacian algorithm can be used as a metric for blurrinness in an image, with higher values beeing less blurry. <br />
+  The laplacian algorithm can be used as a metric for blurriness in an image, with higher values beeing less blurry. <br />
   
   - The **HIGHER** the Sharpness, the better the image.
 <br />
@@ -129,7 +129,7 @@ The results of a medium-range performing network is shown in the following pictu
 </p>
 
 <br />
-As the figure points out, the network produces a better PSNR and SSIM score. The MSE is worse in this case, probably because of the higher generative stake. The laplace algorithm rates the network to be more blurry, what is expected to decrease with more epochs of training. See following picture: <br /> <br /> 
+As the figure points out, the network produces a better PSNR and SSIM score. The MSE is worse in this case, probably because of the higher stake of learned information. The laplace algorithm rates the network to be more blurry, which is expected to decrease with more epochs of training. See following picture: <br /> <br /> 
 
 <p align="center">
   <img height="200" width="800" src="figures/cnn_training.png">
@@ -140,7 +140,7 @@ As the figure points out, the network produces a better PSNR and SSIM score. The
 
 ### Implementation:
 The SRCNN used in this project can be found in the folder [CNN](https://github.com/tilllit/SingleImageSuperResolution/tree/main/CNN) <br />
-It is a modification of this implementation: [link](https://medium.com/gdplabs/image-super-resolution-in-python-cae6050b13d8) <br />
+It is based on this implementation: [link](https://medium.com/gdplabs/image-super-resolution-in-python-cae6050b13d8) <br />
 
 For training the user needs to manually add the div2k database.
 For testing, a pre-trained model is obtained and the settings should allow to run the script TF.py without any problem.
