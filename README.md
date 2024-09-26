@@ -15,6 +15,10 @@ The following approaches will be discussed:
   <img src="figures/conclusion.png">
   </p>
 
+  <br />
+
+  ! [Try it yourselfe !](https://github.com/tilllit/SingleImageSuperResolution?tab=readme-ov-file#diy) !
+
 <br />
 <br />
 
