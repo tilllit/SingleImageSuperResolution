@@ -246,7 +246,7 @@ The following examples will visualize this behavior. I find it interesting to se
 ## DIY
 
 For everyone, who wants to try these networks, there is a pretrained version, that creates a comparison, as seen in the pictures before in the folder [Comparison](https://github.com/tilllit/SingleImageSuperResolution/tree/main/Comparison). <br /><br />
-You can place any .png image by the name "org.png" in the folder "_test" and start ste script Compare.py. The code will create the comparing plot and save the output images in the subfolder "pred".
+You can place any .png image by the name "org.png" in the folder "_test" and start the script Compare.py. The code will create the comparing plot and save the output images in the subfolder "pred".
 
 
 
