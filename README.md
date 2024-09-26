@@ -163,6 +163,8 @@ The architectur of the SRGAN (Super Resolution Generative Adversarial Networks) 
   <img height="450" width="800" src="figures/srgan_architecture.png">
 </p>
 
+To understand the functional principle I recommend watching this [walkthrough video](https://www.youtube.com/watch?v=qwYOlXRdADI) <br />
+
 The training of the SRGAN can be witnessed in the following GIF file:
 
 <p align="center">
