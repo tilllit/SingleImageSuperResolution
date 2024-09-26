@@ -19,7 +19,7 @@ The following approaches will be discussed:
 <br />
 
 
-## Metrics (image quality)
+## Metrics
 
 The following metrics ase used to determine the quality of the different SR- (Super Resolution) techniques:
 - **PSNR** (Peak Signal Noide Ratio) <br />
